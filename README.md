@@ -1,3 +1,20 @@
+# SDET_ADVANCED_CASE STUDY 2
+Implement below Case Study using Rest Assured API Automation Framework
+1.Create a positive and negative cases for below API. 
+And should use POST method 
+
+Verify the HTTP Status Codes and Responses using Assertions, while running Positive and Negative Test Cases. 
+
+API URL:  https://reqres.in/api/login
+
+
+Request:
+{
+    "email": "test@gmail.com",
+    "password": "test"
+}
+
+Note: Implemented API Test Cases should run through Jenkins Job
 # API Test Framework
 
 A Java-based API test automation framework using Rest Assured, JUnit 5, and ExtentReports for reporting.
@@ -40,7 +57,7 @@ apitestframework/
 ### Setup
 1. **Clone the repository:**
    ```
-   git clone <your-repo-url>
+   git clone https://github.com/cdeshpandevirtusa/apitestframework.git
    cd apitestframework
    ```
 2. **Configure properties:**
@@ -58,7 +75,7 @@ apitestframework/
 - Create a Pipeline job and point it to this repository.
 - Test results and reports will be archived as build artifacts.
 
-#### Jenkins Job Run Details
+#### Jenkins Job Run Details - Jenkins can be accessed at http://localhost:8080/ and enter username and password - jenkins job is currently getting executed without any failures
 1. **Install Required Tools and Plugins:**
    - Go to **Manage Jenkins > Global Tool Configuration** and add Maven (e.g., `Maven`) and JDK (e.g., `jdk-21`).
    - Install plugins: Pipeline, Maven Integration, JUnit, Git.
@@ -74,6 +91,7 @@ apitestframework/
    - Click the build number to see **Console Output**.
    - Test results are available under **Test Result** (JUnit plugin).
    - Download/view `ExtentReports.html` from **Archived Artifacts**.
+ 
 
 **Note:**
 - On Windows agents, the Jenkinsfile uses `bat` steps for Maven commands.
