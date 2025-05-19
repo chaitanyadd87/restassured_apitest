@@ -57,7 +57,7 @@ apitestframework/
 ### Setup
 1. **Clone the repository:**
    ```
-   git clone https://github.com/cdeshpandevirtusa/apitestframework.git
+   git clone https://github.com/chaitanyadd87/restassured_apitest.git
    cd apitestframework
    ```
 2. **Configure properties:**
@@ -75,7 +75,7 @@ apitestframework/
 - Create a Pipeline job and point it to this repository.
 - Test results and reports will be archived as build artifacts.
 
-#### Jenkins Job Run Details - Jenkins can be accessed at http://localhost:8080/ and enter username and password - jenkins job is currently getting executed without any failures
+#### Jenkins Job Run Details - Jenkins can be accessed at http://localhost:8080/job/ApiTests/ and enter username and password - jenkins job is currently getting executed without any failures
 1. **Install Required Tools and Plugins:**
    - Go to **Manage Jenkins > Global Tool Configuration** and add Maven (e.g., `Maven`) and JDK (e.g., `jdk-21`).
    - Install plugins: Pipeline, Maven Integration, JUnit, Git.
