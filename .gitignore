@@ -1,0 +1,21 @@
+# Logs
+*.log
+target/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Maven
+*.iml
+
+# Node dependencies (if any)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
